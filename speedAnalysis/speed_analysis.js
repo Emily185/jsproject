@@ -7,7 +7,7 @@ function startTest(){
     document.getElementById("output").innerHTML = "";
     startTime = new Date().getTime();
 
-    ver button = document.getElementById("btn");
+    var button = document.getElementById("btn");
     button.innerHTML = "Finalizar prueba";
     button.onclick = endTest;
 }
@@ -36,7 +36,7 @@ function endTest() {
     // Mostrar los resultados
     var outputDiv = document.getElementById("output");
     outputDiv.innerHTML = "<h2>Resultados de la Prueba de Escritura:</h2>" +
-        "<p>Palabras Escribidas: " + typedWords + "</p>" +
+        "<p>Palabras Escritas: " + typedWords + "</p>" +
         "<p>Tiempo Transcurrido: " + timeElapsed.toFixed(2) + " segundos</p>" +
         "<p>Palabras Por Minuto (WPM): " + wpm + "</p>";
 
